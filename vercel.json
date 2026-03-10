@@ -2,7 +2,7 @@
   "version": 2,
   "builds": [
     {
-      "src": "api/**/*.js",
+      "src": "api/create-payment-link.js",
       "use": "@vercel/node"
     },
     {
@@ -17,13 +17,6 @@
     {
       "src": "/api/create-payment-link",
       "dest": "/api/create-payment-link.js"
-    },
-    {
-      "src": "/api/(.*)",
-      "dest": "/api/$1"
-    },
-    {
-      "handle": "filesystem"
     },
     {
       "src": "/(.*)",
