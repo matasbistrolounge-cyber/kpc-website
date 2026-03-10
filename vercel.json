@@ -28,7 +28,8 @@
     {
       "src": "/(.*)",
       "dest": "/index.html"
-    }
+    }.
+    update
   ],
   "env": {
     "STRIPE_SECRET_KEY": "@stripe-secret-key"
