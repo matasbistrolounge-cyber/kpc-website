@@ -1,9 +1,9 @@
 // Stripe Payment Link API - Serverless Function
-import Stripe from 'stripe';
+const Stripe = require('stripe');
 
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 
-export default async function handler(req, res) {
+module.exports = async (req, res) => {
   // Enable CORS
   res.setHeader('Access-Control-Allow-Origin', '*');
   res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
@@ -74,4 +74,4 @@ export default async function handler(req, res) {
       message: error.message,
     });
   }
-}
+};
