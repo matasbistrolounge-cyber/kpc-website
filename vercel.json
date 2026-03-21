@@ -1,12 +1,10 @@
 {
   "version": 2,
-"functions": {
-  "api/checkout.js": {
-    "runtime": "vercel-nodejs@18.0.0"
-  }
-},
-  }
-},
+  "functions": {
+    "api/checkout.js": {
+      "runtime": "vercel-nodejs@18.0.0"
+    }
+  },
   "routes": [
     {
       "src": "/api/checkout",
